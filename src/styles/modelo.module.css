@@ -1,0 +1,132 @@
+.modeloCont{
+    width: 98%;
+    height: 95%;
+    margin-top: 2vh;
+    opacity: 0;
+    animation: modeloIn .5s ease forwards .2s;
+}
+@keyframes modeloIn {
+    100%{
+        opacity: 1;
+    }
+}
+.modeloMain{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 85vh;
+}
+.modeloMain > div{
+    width: 50%;
+    height: 100%;
+}
+.mainImg{
+    /* background-image: url('/38ContemporaneoExt.jpg'); */
+    background-size: 140% 120%;
+    background-position-x: 35%;
+}
+.mainInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2vh;
+}
+.mainInfo h1{
+    font-size: 4vw;
+    width: 90%;
+}
+.mainInfo h2{
+    font-size: 3vw;
+    width: 90%;
+    text-align: left;
+}
+.featuresCont{
+    width: 90%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.featuresCont > div{
+    position: relative;
+    width: 50%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1vh;
+}
+.features1::after{
+    content: '';
+    position: absolute;
+    height: 90%;
+    width: .8%;
+    right: 5%;
+    bottom: 5%;
+    background-color: black;
+}
+.feature{
+    width: 100%;
+    height: 12vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2vh;
+}
+.feature img{
+    width: 15%;
+}
+.feature p{
+    font-size: 3.8vh;
+}
+
+.tyc{
+    width: 90%;
+    height: 30%;
+    text-align: end;
+    font-size: 3.5vh;
+    padding-top: 3vh;
+}
+
+/* imgs */
+.modeloImgs{
+    width: 100%;
+    height: 20%;
+    margin-top: 2vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.modeloImgs img{
+    width: 32%;
+    height: 100%;
+}
+
+/* platnas */
+.plantasCont{
+    width: 100%;
+    height: 105vh;
+    margin-top: 2.5vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.planta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33%;
+    height: 95%;
+}
+.planta img{
+    width: 55%;
+    height: 95%;
+}
+.planta p{
+    font-size: 5vh;
+}
